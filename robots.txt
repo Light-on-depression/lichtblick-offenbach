@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lichtblick-offenbach.de/sitemap.xml

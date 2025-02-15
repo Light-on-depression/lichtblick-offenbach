@@ -3,55 +3,435 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lichtblick Offenbach - Selbsthilfegruppe Depression</title>
-    <meta name="description" content="Selbsthilfegruppe für Menschen mit Depression in Offenbach am Main. Treffen alle zwei Wochen donnerstags um 17:30 Uhr. Neue Teilnehmer willkommen.">
-    <meta name="keywords" content="Selbsthilfegruppe, Depression, Offenbach, Selbsthilfe, psychische Gesundheit">
+    <title>Depression Selbsthilfegruppe in Offenbach | Lichtblick | </title>
+    <meta name="description" content="Für Menschen, die von Depressionen betroffen sind. Jeden 1. und 3. Donnerstag, 19:00 Uhr. Komm vorbei.">
+    <meta name="keywords" content="Selbsthilfegruppe, Depression, Offenbach, Depression Hilfe Offenbach, Depressionen Selbsthilfe, psychische Gesundheit Offenbach, Lichtblick Offenbach, Selbsthilfebüro, Selbsthilfegruppe Offenbach, Selbsthilfegruppe Depression, Selbsthilfegruppe Depressionen">
     <meta name="author" content="Lichtblick Offenbach">
-    <meta property="og:title" content="Lichtblick Offenbach - Selbsthilfegruppe Depression">
-    <meta property="og:description" content="Selbsthilfegruppe für Menschen mit Depression in Offenbach am Main. Treffen alle zwei Wochen donnerstags.">
+    
+    <!-- Open Graph Tags für bessere Social Media Darstellung -->
+    <meta property="og:title" content="Depression Selbsthilfegruppe Offenbach | Lichtblick ">
+    <meta property="og:description" content="Du bist nicht allein. Unsere Selbsthilfegruppe in Offenbach ist ein Ort, an dem du sein darfst, wie du bist. Jeden 1. und 3. Donnerstag, 19:00 Uhr.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lichtblick-offenbach.de">
-    <link rel="stylesheet" href="style.css">
+    <meta property="og:locale" content="de_DE">
+    
+    <!-- SEO Meta-Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="googlebot-news" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="slurp" content="index, follow">
+    <meta name="duckduckbot" content="index, follow">
+    <meta name="baiduspider" content="index, follow">
+    <meta name="yandexbot" content="index, follow">
+    <link rel="canonical" href="https://lichtblick-offenbach.de">
+    
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Health",
+        "name": "Lichtblick Offenbach - Selbsthilfegruppe Depression",
+        "description": "Selbsthilfegruppe Depression",
+        "openingHours": ["Th 19:00"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Berliner Str. 219",
+            "addressLocality": "Offenbach am Main",
+            "postalCode": "63067",
+            "addressCountry": "DE"
+        },
+        "email": "lichtblick-offenbach@tutanota.de",
+        "event": {
+            "@type": "Event",
+            "name": "Selbsthilfegruppe Depression - Regelmäßiges Treffen",
+            "startDate": "2025-02-20T19:00",
+            "endDate": "2025-02-20T20:30",
+            "location": {
+                "@type": "Place",
+                "name": "Selbsthilfebüro des Paritätischen",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Berliner Str. 219",
+                    "addressLocality": "Offenbach am Main",
+                    "postalCode": "63067",
+                    "addressCountry": "DE"
+                }
+            },
+            "recurrence": "Jeden 1. und 3. Donnerstag im Monat"
+        }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e293b;
+            --text-color: #334155;
+            --light-text: #64748b;
+            --border-radius: 12px;
+            --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
+            background-attachment: fixed;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin: 25px 0 15px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 20px 0 10px;
+            font-size: 1.4em;
+        }
+
+        section {
+            background: rgba(147, 197, 253, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: transform 0.2s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            background: rgba(147, 197, 253, 0.2);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-color);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: var(--light-text);
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+
+        .welcome p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .what-to-expect, .contact-options {
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4px);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin: 20px 0;
+        }
+
+        .email {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+
+        .email a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .email a:hover {
+            text-decoration: underline;
+        }
+
+        .email-template {
+            background: rgba(165, 243, 252, 0.15);
+            backdrop-filter: blur(4px);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--primary-color);
+            margin: 15px 0;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        .question h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        address {
+            font-style: normal;
+            margin: 20px 0;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4px);
+            border-radius: var(--border-radius);
+            line-height: 1.8;
+        }
+
+        .directions {
+            margin-top: 15px;
+            color: var(--light-text);
+        }
+
+        .note {
+            font-style: italic;
+            color: var(--light-text);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .closing-note {
+            font-size: 1.2em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-reminder {
+            color: var(--light-text);
+        }
+
+        .partner-link {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: var(--border-radius);
+        }
+
+        .partner-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .partner-link a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            section {
+                box-shadow: none;
+                border: 1px solid #ccc;
+                break-inside: avoid;
+            }
+
+            .what-to-expect, .contact-options {
+                background: white;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Lichtblick Offenbach</h1>
-        <p class="subtitle">Eine Selbsthilfegruppe zum Thema Depression in Offenbach am Main</p>
-        <div class="stats">
-            <div class="stat-box">
-                <h3>Aktive Mitglieder</h3>
-                <p class="stat-number">6</p>
+
+<header>
+        <h1>Depression Selbsthilfegruppe Lichtblick - in Offenbach</h1>
+        <p class="subtitle">Für Menschen, die von Depressionen betroffen sind.</p>
+    </header>
+    
+    <main>
+        <section class="welcome">
+            <h2>Selbsthilfe - du bist nicht allein!</h2>
+            <p>In unserer kleinen Gruppe treffen sich Menschen, die wie du mit Depressionen leben. Einige von uns sind mittendrin, andere sind auf dem Weg der Besserung.</p>
+        </section>
+
+        <section class="location">
+            <h2>Hier findest du uns:</h2>
+            <address>
+                Berliner Str. 219<br>
+                63067 Offenbach am Main<br>
+                3. OG im Selbsthilfebüro<br>
+                Paritätische Projekte gemeinnützige GmbH
+            </address>
+        </section>
+        
+        <section class="meeting-dates">
+            <h2>Wann wir uns treffen</h2>
+            <p>Jeden 1. und 3. Donnerstag im Monat um 19:00 Uhr. Die Zeit haben wir bewusst gewählt - spät genug für Berufstätige, früh genug für einen ruhigen Heimweg.</p>
+            
+            <div class="next-meetings">
+                <p>Unsere nächsten Treffen:</p>
+                <ul id="next-meetings">
+                    <!-- Wird dynamisch mit JavaScript gefüllt -->
+                </ul>
+                <p class="note">Du kannst jederzeit einsteigen - auch mitten im Jahr.</p>
             </div>
-            <div class="stat-box">
-                <h3>Ehemalige Mitglieder</h3>
-                <p class="stat-number">9+</p>
+        </section>
+
+        <section class="what-to-expect">
+            <h2>Was dich erwartet:</h2>
+            <p>Eine kleine Gruppe (5-8 Personen) Ein ruhiger, heller Raum Neue Mitglieder sind willkommen - komm einfach vorbei Kostenlos</p>
+        </section>
+
+        <section class="first-contact">
+            <h2>Erster Kontakt</h2>
+            <p>Unsicher? Das verstehen wir gut. Du kannst uns gerne vorab eine E-Mail schreiben - oder auch einfach spontan vorbeikommen. Beides ist völlig in Ordnung.</p>
+            
+            <div class="contact-options">
+                <p class="email">📧 <a href="mailto:lichtblick-offenbach@tutanota.de">lichtblick-offenbach@tutanota.de</a></p>
             </div>
+        </section>
+        
+        <section class="about-us">
+            <h2>Über uns</h2>
+            <p>Unsere Gruppe wurde im Oktober 2023 von jemandem gegründet, der selbst den Weg durch die Depression kennt. Wir sind keine Therapie und kein Ersatz für professionelle Hilfe - aber ein Ort, an dem du verstanden wirst.</p>
+            <p>Bei uns findest du: Menschen, die ähnliches erleben wie du Einen geschützten Raum, wo man offen darüber reden kann. Verständnis ohne Bewertung</p>
+        </section>
+        
+        <section class="faq">
+            <h2>Häufige Fragen</h2>
+            <div class="question">
+                <h3>Muss ich mich anmelden?</h3>
+                <p>Nein, du kannst einfach vorbeikommen. Eine kurze E-Mail ist nett, aber nicht notwendig. Momentan sind wir eine "offene" Selbsthilfegruppe.</p>
+            </div>
+            <div class="question">
+                <h3>Kostet es etwas?</h3>
+                <p>Nein, die Teilnahme ist komplett kostenlos.</p>
+            </div>
+            <div class="question">
+                <h3>Muss ich jedes Mal kommen?</h3>
+                <p>Nein, du kommst, wann du kannst und möchtest.</p>
+            </div>
+            <div class="question">
+                <h3>Muss ich etwas vorbereiten?</h3>
+                <p>Nein, bring einfach dich selbst mit.</p>
+            </div>
+        </section>
+    </main>
+<footer>
+        <p class="closing-note">Manchmal ist es der schwerste Schritt, aber du musst ihn nicht alleine gehen.</p>
+        <p class="contact-reminder">Lichtblick Offenbach - Selbsthilfegruppe - Kostenlos - Vertraulich</p>
+        <div class="partner-link">
+            <p>Mit freundlicher Unterstützung von:</p>
+            <a href="https://www.paritaet-selbsthilfe.org/" target="_blank">Paritätische Selbsthilfe</a>
         </div>
-        <div class="meeting-dates">
-            <h2>Treffen & Termine</h2>
-            <p>Unsere Gruppe "Selbsthilfe Depression" trifft sich alle zwei Wochen donnerstags um 17:30 Uhr.</p>
-            <p>Die nächsten Termine:</p>
-            <ul>
-                <li>24. Oktober 2024</li>
-                <li>07. November 2024</li>
-                <li>21. November 2024</li>
-                <li>05. Dezember 2024</li>
-                <li>19. Dezember 2024</li>
-            </ul>
-        </div>
-        <div class="address">
-            <h2>Adresse</h2>
-            <p>Berliner Str. 219<br>
-            63067 Offenbach am Main<br>
-            im 3. OG</p>
-            <p>Wir nutzen einen großen Raum  im Selbsthilfebüro des Paritätischen - Eine Einrichtung der Paritätischen Projekte gGmbH.</p>
-        </div>
-        <div class="contact">
-            <h2>Kontakt & Teilnahme</h2>
-            <p>📧 <a href="mailto:lichtblick-offenbach@tutanota.de">lichtblick-offenbach@tutanota.de</a></p>
-            <p>Interessierte können einfach zu einem der Treffen kommen. Eine Voranmeldung per E-Mail ist gerne gesehen.</p>
-            <p>Die Gruppe wurde im Oktober 2023 von einem Betroffenen gegründet.</p>
-        </div>
-    </div>
+    </footer>
+
+
+    <!-- Dynamische Terminberechnung -->
+    <script>
+        function getNextMeetings() {
+            const meetings = [];
+            const today = new Date();
+            let currentDate = new Date();
+            
+            // Setze auf den ersten Tag des Monats
+            currentDate.setDate(1);
+            
+            // Finde die nächsten 5 Termine
+            while (meetings.length < 5) {
+                // Prüfe, ob es ein Donnerstag ist
+                if (currentDate.getDay() === 4) { // 4 = Donnerstag
+                    const dayOfMonth = currentDate.getDate();
+                    
+                    // Prüfe, ob es der 1. oder 3. Donnerstag ist
+                    if (dayOfMonth <= 7 || (dayOfMonth > 14 && dayOfMonth <= 21)) {
+                        // Nur zukünftige Termine hinzufügen
+                        if (currentDate > today) {
+                            meetings.push(new Date(currentDate));
+                        }
+                    }
+                }
+                
+                // Gehe zum nächsten Tag
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+            
+            return meetings;
+        }
+
+        function formatDate(date) {
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            return date.toLocaleDateString('de-DE', options);
+        }
+
+        window.onload = function() {
+            const nextMeetings = getNextMeetings();
+            const meetingsList = document.getElementById('next-meetings');
+            
+            nextMeetings.forEach(date => {
+                const li = document.createElement('li');
+                li.textContent = `${formatDate(date)}, 19:00 Uhr`;
+                meetingsList.appendChild(li);
+            });
+        };
+    </script>
 </body>
 </html>
