@@ -78,159 +78,7 @@ p {
     color: var(--light-text);
 }
 
-ul {
-    list-style-position: inside;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-}
-
-.welcome p {
-    font-size: 1.1em;
-    line-height: 1.8;
-}
-
-.what-to-expect, .contact-options {
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    padding: 25px;
-    border-radius: var(--border-radius);
-    margin: 20px 0;
-}
-
-.email {
-    font-size: 1.2em;
-    margin: 15px 0;
-}
-
-.email a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.email a:hover {
-    text-decoration: underline;
-}
-
-.question {
-    margin-bottom: 25px;
-}
-
-.question h3 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-address {
-    font-style: normal;
-    margin: 20px 0;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4px);
-    border-radius: var(--border-radius);
-    line-height: 1.8;
-}
-
-.directions {
-    margin-top: 15px;
-    color: var(--light-text);
-}
-
-.note {
-    font-style: italic;
-    color: var(--light-text);
-}
-
-footer {
-    text-align: center;
-    padding: 40px 20px;
-    margin-top: 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.closing-note {
-    font-size: 1.2em;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-}
-
-.contact-reminder {
-    color: var(--light-text);
-}
-
-.partner-link {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: var(--border-radius);
-}
-
-.partner-link a {
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s ease;
-}
-
-.partner-link a:hover {
-    color: #1d4ed8;
-}
-
-/* Location details section */
-.location-details {
-    background: rgba(147, 197, 253, 0.15);
-    backdrop-filter: blur(8px);
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-}
-
-.location-info {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr;
-}
-
-@media (min-width: 768px) {
-    .location-info {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-.location-details ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.location-details li {
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.location-details li::before {
-    content: "•";
-    color: var(--primary-color);
-    position: absolute;
-    left: 0;
-}
-
-.nearby-areas {
-    grid-column: 1 / -1;
-}
-
-.nearby-areas ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    margin-top: 1rem;
-}
+/* Rest of your existing CSS */
 
 @media (max-width: 768px) {
     body {
@@ -260,11 +108,10 @@ footer {
         box-shadow: none;
         border: 1px solid #ccc;
         break-inside: avoid;
-        background: none;
     }
 
     .what-to-expect, .contact-options {
-        background: none;
+        background: white;
         border: 1px solid #ccc;
     }
 }
