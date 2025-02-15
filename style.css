@@ -115,15 +115,6 @@ li {
     text-decoration: underline;
 }
 
-.email-template {
-    background: rgba(165, 243, 252, 0.15);
-    backdrop-filter: blur(4px);
-    padding: 20px;
-    border-radius: var(--border-radius);
-    border-left: 4px solid var(--primary-color);
-    margin: 15px 0;
-}
-
 .question {
     margin-bottom: 25px;
 }
@@ -188,7 +179,6 @@ footer {
 
 .partner-link a:hover {
     color: #1d4ed8;
-    text-decoration: underline;
 }
 
 /* Location details section */
@@ -199,17 +189,6 @@ footer {
     margin: 30px 0;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-
-.location-details h2 {
-    color: var(--secondary-color);
-    margin-bottom: 1.5rem;
-}
-
-.location-details h3 {
-    color: var(--primary-color);
-    margin: 1.5rem 0 0.75rem;
-    font-size: 1.2em;
 }
 
 .location-info {
@@ -281,10 +260,11 @@ footer {
         box-shadow: none;
         border: 1px solid #ccc;
         break-inside: avoid;
+        background: none;
     }
 
     .what-to-expect, .contact-options {
-        background: white;
+        background: none;
         border: 1px solid #ccc;
     }
 }
