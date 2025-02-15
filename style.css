@@ -1,96 +1,186 @@
-:root {
-    --primary-color: #2563eb;
-    --secondary-color: #1e293b;
-    --text-color: #334155;
-    --light-text: #64748b;
-    --border-radius: 12px;
-    --box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-}
-
-* {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+    min-height: 100vh;
 }
 
-body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);
-    background-attachment: fixed;
-    max-width: 1200px;
-    margin: 0 auto;
+main {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
 }
 
+section {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
 header {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
     text-align: center;
-    margin-bottom: 40px;
-    padding: 40px 20px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8px);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
 }
 
 h1 {
-    color: var(--primary-color);
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    line-height: 1.2;
+    color: #1976d2;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 h2 {
-    color: var(--secondary-color);
-    margin: 25px 0 15px;
-    font-size: 1.8em;
+    color: #1976d2;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 h3 {
-    color: var(--secondary-color);
-    margin: 20px 0 10px;
-    font-size: 1.4em;
-}
-
-section {
-    background: rgba(147, 197, 253, 0.15);
-    backdrop-filter: blur(8px);
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    transition: transform 0.2s ease;
-}
-
-section:hover {
-    transform: translateY(-2px);
-    background: rgba(147, 197, 253, 0.2);
-}
-
-p {
+    color: #1976d2;
+    margin-top: 20px;
     margin-bottom: 15px;
-    color: var(--text-color);
 }
 
 .subtitle {
+    text-align: center;
     font-size: 1.2em;
-    color: var(--light-text);
+    color: #555;
 }
 
-/* Rest of your existing CSS */
+address {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-style: normal;
+}
+
+.what-to-expect, .contact-options {
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.location-details {
+    margin-top: 30px;
+}
+
+.location-info {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.location-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.location-details li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.location-details li::before {
+    content: "•";
+    color: #1976d2;
+    position: absolute;
+    left: 0;
+}
+
+.nearby-areas {
+    grid-column: 1 / -1;
+}
+
+.email {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.email a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+.email a:hover {
+    text-decoration: underline;
+}
+
+.question {
+    margin-bottom: 25px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.question:last-child {
+    margin-bottom: 0;
+}
+
+.note {
+    font-style: italic;
+    color: #666;
+}
+
+footer {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.closing-note {
+    color: #1976d2;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-reminder {
+    color: #666;
+}
+
+.partner-link {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+}
+
+.partner-link a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.partner-link a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 768px) {
-    body {
-        padding: 10px;
+    main, header, footer {
+        margin: 20px;
     }
 
-    header {
-        padding: 20px 10px;
+    .location-info {
+        grid-template-columns: 1fr;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     section {
@@ -101,17 +191,15 @@ p {
 @media print {
     body {
         background: white;
-        color: black;
     }
 
-    section {
+    section, header, footer {
         box-shadow: none;
-        border: 1px solid #ccc;
         break-inside: avoid;
     }
 
-    .what-to-expect, .contact-options {
-        background: white;
+    .what-to-expect, .contact-options, .question {
+        background-color: white;
         border: 1px solid #ccc;
     }
 }
